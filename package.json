@@ -4,12 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
+    "sass": "node-sass scss/styles.scss css/styles.css -w",
+    "normalize": "@csstools/normalize.css",
+    "clean": "rimraf dist .cache .cache-loader"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pablo Andres Anton",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.4"
   }
 }

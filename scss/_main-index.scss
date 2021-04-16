@@ -1,0 +1,35 @@
+figure img {
+    width: 100%;
+    max-width: 700px;
+}
+
+.nav-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width:820px) {
+        flex-direction: row;
+    }
+    
+}
+
+@media (min-width:820px)  {
+    .nav-index img {
+        width: 275px;
+    }      
+}
+
+@media (min-width:970px)  {
+    .nav-index img {
+        width: 325px;
+    }      
+}
+
+@media (min-width:1200px)  {
+    .nav-index img {
+        width: 375px;
+    }      
+}
+.nav-index a p {
+    margin: 0 2rem 4rem;
+}

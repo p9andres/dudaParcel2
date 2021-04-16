@@ -1,0 +1,27 @@
+$green:  rgb(125, 173, 12);
+$blue: blue;
+
+.green, span {
+	color: $green;
+}
+
+body {
+    background-color: lightgray;
+  /*  main {
+        background-color: lightgray;
+    }*/
+}
+
+a {
+    color: $blue;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover, #plato:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
